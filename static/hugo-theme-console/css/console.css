@@ -32,19 +32,19 @@
 
 :root {
     --global-font-size: 16px;
-    --global-font-color: #444;
+    --global-font-color: #b9b9b9;
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
-    --code-bg-color: #fff;
+    --code-bg-color: #2b2b2b;
 }
 
 @media only screen and (max-width: 850px) {
     :root {
         --global-font-size: 14px;
-        --global-font-color: #444;
+        --global-font-color: #b9b9b9;
         --global-line-height: 1.6em;
         --page-width: 70em;
     }
@@ -73,7 +73,7 @@
 body {
     font-family: var(--font-stack);
     font-size: var(--global-font-size);
-    background-color: #fff;
+    background-color: #2b2b2b;
     margin-bottom: 75px;
 }
 
@@ -165,7 +165,7 @@ figure {
     margin-top: 100px;
     padding-top: 10px;;
     border-top: 1px solid var(--secondary-color);
-    color: var(--global-font-color);
+    /* color: var(--global-font-color); */
 }
 
 .image-grid {
@@ -214,7 +214,22 @@ figure {
     padding-top: 0;
 }
 
+
+#picture-of-me{
+    width: 350px;
+    border-radius: 100%;
+}
+
+#about-container{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
 @media only screen and (max-width: 850px) {
+
+    
+
     .site-name {
         width: 2ch;
         overflow: hidden;
@@ -252,7 +267,6 @@ figure {
 
     .posts-list {
         position: relative;
-        padding-left: 0;
         top: 0;
     }
 
@@ -268,7 +282,6 @@ figure {
         z-index: 400;
         font-weight: bold;
         padding-top: 0;
-        display: none;
     }
 
 
@@ -276,4 +289,11 @@ figure {
         margin-top: 50px;
         padding-top: 5px;;
     }
+
+    #picture-of-me{
+        width: 150px;
+    }
 }
+
+/* added by me */
+
