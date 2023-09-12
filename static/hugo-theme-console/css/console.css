@@ -178,14 +178,18 @@ figure {
             minmax(calc(var(--page-width) / 4), 1fr));
 }
 
+
+
 .terminal-prompt::after {
     -webkit-animation: cursor 1s infinite;
     animation: cursor 1s infinite;
     width: 10px;
+    
 }
 
 .terminal-prompt::before {
     content: none;
+
 }
 
 .gallery-image {
@@ -224,6 +228,7 @@ figure {
     display: flex;
     align-items: center;
     gap: 10rem;
+    
 }
 
 @media only screen and (max-width: 850px) {
@@ -233,8 +238,10 @@ figure {
     .site-name {
         width: 2ch;
         overflow: hidden;
-        display: inline-block;
+        display:inline-block;
+        vertical-align: middle
     }
+    
 
     .terminal-nav {
         align-items: flex-start;
@@ -292,6 +299,12 @@ figure {
 
     #picture-of-me{
         width: 150px;
+    }
+
+    #about-container{
+        display: flex;
+        align-items: center;
+        gap: 0;   
     }
 }
 
